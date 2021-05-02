@@ -4,6 +4,20 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown')
 // TODO: Create an array of questions for user input
 const questions = [
+  // name question
+  {
+    type: 'input',
+    name: 'name',
+    message: 'What is your full name?',
+    validate: nameInput => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log('Please enter your full name')
+      }
+    }
+  },
+  // github username question
   {
     type: 'input', 
     name: 'github',
@@ -17,6 +31,7 @@ const questions = [
       }
     }
   },
+  // email question
   {
     type: 'input',
     name: 'email',
@@ -30,6 +45,7 @@ const questions = [
       }
     }
   },
+  // project title question
   {
     type: 'input',
     name: 'title',
@@ -43,6 +59,7 @@ const questions = [
       }
     }
   },
+  // project description question
   {
     type: 'input',
     name: 'description',
@@ -56,6 +73,7 @@ const questions = [
       }
     }
   },
+  // installation instructions questions
   {
     type: 'input',
     name: 'installation',
@@ -69,6 +87,7 @@ const questions = [
       }
     }
   },
+  // usage information question
   {
     type: 'input',
     name: 'usage',
@@ -82,6 +101,7 @@ const questions = [
       }
     }
   },
+  // installation instructions question
   {
     type: 'input',
     name: 'installation',
@@ -95,6 +115,7 @@ const questions = [
       }
     }
   },
+  // contribution guidelines question
   {
     type: 'input',
     name: 'contribution',
@@ -108,6 +129,7 @@ const questions = [
       }
     }
   },
+  // test instructions question
   {
     type: 'input',
     name: 'tests',
@@ -121,11 +143,12 @@ const questions = [
       }
     }
   },
+  // license question
   {
     type: 'list',
     name: 'license',
     message: 'Choose a license for your project (Please choose one or leave blank if no license)',
-    choices: ['MIT', 'Mozilla Public License', 'GNU LGPLv3', 'The Unlicense', 'no license']
+    choices: ['MIT', 'Apache License', 'GNU LGPLv3', 'The Unlicense', 'no license']
   }
 ];
 
