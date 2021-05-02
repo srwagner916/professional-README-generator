@@ -101,20 +101,6 @@ const questions = [
       }
     }
   },
-  // installation instructions question
-  {
-    type: 'input',
-    name: 'installation',
-    message: 'Please enter the installation instructions (Required)',
-    validate: installationInput => {
-      if (installationInput) {
-        return true;
-      } else {
-        console.log('Please enter the installation instructions');
-        return false;
-      }
-    }
-  },
   // contribution guidelines question
   {
     type: 'input',
