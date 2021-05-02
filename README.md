@@ -12,7 +12,8 @@ This application creates a README.md file based upon user input.   After the use
 ## Installation
 To install this application.  The user will need to install node.js.  The download for node can be found at https://nodejs.org/en/download/.  They will also need to install the inquirer package.  The inquirer documentation can be found at this link https://www.npmjs.com/package/inquirer.  To install inquirer navigate to this projects directory and in the commmand line run the command npm install inquirer.
 ## Usage
-To use this application, in the command line run the command node index.js . Then follow the prompts given in the terminal.  After finishing the prompts, the application will write a README.md file using the given information.
+To use this application, in the command line run the command node index.js . Then follow the prompts given in the terminal.  After finishing the prompts, the application will write a README.md file using the given information.<br>
+Here is a link to a walkthrough of how to use this application. https://drive.google.com/file/d/10P42dIcs-2fx7Ym0wYGbxBPAvVwse2h6/view
 ## Contribution
 I request that people do not contribute to this project.
 ## Tests
