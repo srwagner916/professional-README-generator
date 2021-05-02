@@ -1,6 +1,14 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+function renderLicenseBadge(license) {
+  if(license === 'no license') {
+    return ''
+  } else {
+    let trimmedLicense = license;
+    trimmedLicense = trimmedLicense.toString().replace(/ /g, '%20');
+    return `![License Badge](https://img.shields.io/badge/license-${trimmedLicense}-green)`;
+  }
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -32,9 +40,9 @@ ${data.contribution}
 ## Tests
 ${data.tests}
 ## License
-${data.license}
+${renderLicenseBadge(data.license)}
 ## Questions
-GitHub: ${data.github}
+GitHub: ${data.github}<br>
 Email: <${data.email}>
 `;
 }

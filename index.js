@@ -122,10 +122,10 @@ const questions = [
     }
   },
   {
-    type: 'checkbox',
+    type: 'list',
     name: 'license',
-    message: 'Choose a license for your project',
-    choices: ['MIT', 'Mozilla Public License', 'GNU LGPLv3', 'The Unlicense']
+    message: 'Choose a license for your project (Please choose one or leave blank if no license)',
+    choices: ['MIT', 'Mozilla Public License', 'GNU LGPLv3', 'The Unlicense', 'no license']
   }
 ];
 
