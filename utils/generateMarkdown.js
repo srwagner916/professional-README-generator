@@ -16,7 +16,7 @@ function renderLicenseLink(license) {
   if(license === 'no license') {
     return '';
   } else {
-    return `* [License](##License)`;
+    return `* [License](#License)`;
   }
 }
 
@@ -467,12 +467,12 @@ ${renderLicenseBadge(data.license)}
 ## Description
 ${data.description}
 ## Table of Contents
-  * [Installation](##Installation)
-  * [Usage](##Usage)
-  * [Contribution](##Contribution)
-  * [Tests](##Tests)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [Contribution](#Contribution)
+  * [Tests](#Tests)
   ${renderLicenseLink(data.license)}
-  * [Contact](##Questions)
+  * [Contact](#Questions)
 ## Installation
 ${data.installation}
 ## Usage
